@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 50px;
+}
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 20px;
+    background: url('/images/Background.jpg') no-repeat center center/cover;
+    color: white;
+}
+.hero-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.hero-section .btn {
+    background: #ff5a5f;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Wrapper (Login/Signup Forms) */
+.wrapper {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.wrapper h1 {
+    margin-bottom: 15px;
+}
+.input-box {
+    margin: 10px 0;
+}
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.butn {
+    background: #ff5a5f;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+    }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+    .feature {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .feature img {
+        max-width: 150px;
+    }
+}
